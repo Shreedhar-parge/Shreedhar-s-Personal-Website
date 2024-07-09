@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreedhar's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+</head>
+
+<body>
+    <!-- //navbar -->
+    <nav class="nav-custom">
+        <a href="#home" class="logo-custom">Shreedhar</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+
+        <!-- menu  -->
+        <ul class="menu-custom">
+            <li><a class="menu-el" href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a class="menu-el" href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a class="menu-el" href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a class="menu-el" href="#projects" onclick="toggleMenu();">Projects</a></li>
+            <li><a class="menu-el" href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- main text and image -->
+    <section id="home">
+        <div class="home-text">
+            <h1>Hey, I'm <br><span>Shreedhar Parge</span> <br> Software Developer</h1>
+            <a href="#contact" class="btn-custom">Hire Me</a>
+        </div>
+
+        <div class="home-img image">
+            <img src="assets/profile photo.png" alt="profile photo">
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/Shreedhar-parge"><i class='bx bxl-github'></a></i>
+            <a href="https://www.linkedin.com/in/shreedhar-parge-34527a194/"><i class='bx bxl-linkedin-square'></a></i>
+        </div>
+        <div></div>
+    </section>
+
+    <!-- about section  -->
+    <section id="about">
+        <div class="heading">
+            <h2>About</h2>
+            <p>My Introduction</p>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="assets/profile photo.png" alt="about img">
+            </div>
+            <div class="about-text">
+                <h1>I'm Shreedhar Parge</h1>
+                <p>Highly motivated and detail-oriented Computer Engineer with a solid foundation in software
+                    development, seeking an exciting opportunity to apply my technical skills and contribute to
+                    innovative software projects.<br>
+                    Proficient in Python, Java, and C++ with a focus on clean and modular code practices. Experience in
+                    full-stack development using HTML, CSS, JavaScript, and frameworks like React and node. Proficient
+                    in SQL for database design, implementation, and optimization.<br>
+                    Seeking a challenging software engineering role where I can leverage my technical expertise to
+                    contribute to cutting-edge projects, enhance my skills, and grow professionally within a dynamic and
+                    innovative environment.</p>
+                <a href="assets/CV/Shreedhar Parge CV 2.pdf" download="" target="_blank" class="btn-custom">Download
+                    CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills  -->
+    <section id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <p>Skills & Certifications</p>
+        </div>
+        <div class="skills-content">
+            <div class="skill">
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-html.svg" alt="image" class="skills__img">
+                    <span class="skills__name">HTML</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-css.svg" alt="image" class="skills__img">
+                    <span class="skills__name">CSS</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-python.svg" alt="image" class="skills__img">
+                    <span class="skills__name">Python</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-java.svg" alt="image" class="skills__img">
+                    <span class="skills__name">Java</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-javascript.svg" alt="image" class="skills__img">
+                    <span class="skills__name">JavaScript</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-mysql.svg" alt="image" class="skills__img">
+                    <span class="skills__name">MySQL</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-bootstrap.svg" alt="image" class="skills__img">
+                    <span class="skills__name">Bootstrap</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-react-native.svg" alt="image" class="skills__img">
+                    <span class="skills__name">React.Js</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-node-js.svg" alt="image" class="skills__img">
+                    <span class="skills__name">Node.Js</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-spring-boot.svg" alt="image" class="skills__img">
+                    <span class="skills__name">Spring Boot</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-git.svg" alt="image" class="skills__img">
+                    <span class="skills__name">Git</span>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/skills/icons8-github.svg" alt="image" class="skills__img">
+                    <span class="skills__name">GitHub</span>
+                </div>
+            </div>
+            <div class="certificates">
+                <div class="container mt-5">
+                    <div id="certificatesCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#certificatesCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="1"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="2"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="3"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="4"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="5"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="6"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="7"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="8"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="9"></li>
+                            <li data-target="#certificatesCarousel" data-slide-to="10"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/certificates/Udemy Web Development Certificate_page-0001.jpg"
+                                    alt="Certificate 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/Udemy Python Certificate_page-0001.jpg"
+                                    alt="Certificate 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/Codecademy java certificate_page-0001.jpg"
+                                    alt="Certificate 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/codecademy HTML course_page-0001.jpg" alt="Certificate 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/codecademy CSS course_page-0001.jpg" alt="Certificate 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/Codecademy JavaScript certificate_page-0001.jpg"
+                                    alt="Certificate 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/Codecademy SQL certificate_page-0001.jpg"
+                                    alt="Certificate 7">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/codecademy Bootstrap certificate_page-0001.jpg"
+                                    alt="Certificate 8">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/codecademy commandline_page-0001.jpg" alt="Certificate 9">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/codecademy git & github_page-0001.jpg"
+                                    alt="Certificate 10">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/certificates/Codecademy Junit testing certificate_page-0001.jpg"
+                                    alt="Certificate 11">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#certificatesCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#certificatesCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects  -->
+    <section id="projects">
+        <div class="heading">
+            <h2>Projects</h2>
+            <p>My Recent Projects</p>
+        </div>
+        <div class="projects-content">
+            <div class="box" onclick="redirectTo('projects/frontend-projects.html')">
+                <img src="assets/projects/frontend.png" alt="projects">
+                <h3 class="projects-heading">Front-End Projects</h3>
+                <p class="projects-para">Front-end projects involves creating the user interface and user experience for
+                    web applications using technologies like HTML, CSS, and JavaScript.
+                    Frameworks such as React facilitate the development of dynamic, responsive single-page
+                    applications.</p>
+            </div>
+            <div class="box" onclick="redirectTo('projects/backend-projects.html')">
+                <img src="assets/projects/backend.png" alt="projects">
+                <h3 class="projects-heading">Back-End Projects</h3>
+                <p class="projects-para">Backend projects involves building the server-side logic that powers web
+                    applications. Using technologies like Spring Boot,
+                    Hibernate, and Java Persistence API (JPA), created robust and scalable APIs and services. Databases
+                    like MySQL, PostgreSQL handle data storage.</p>
+            </div>
+            <div class="box" onclick="redirectTo('projects/fullstack-projects.html')">
+                <img src="assets/projects/fullstack.jpg" alt="projects">
+                <h3 class="projects-heading">Full-stack Projects</h3>
+                <p class="projects-para">Full-stack projects with React, Node.js, and Java involves building both the
+                    frontend and backend of web applications. The frontend is created using React,
+                    while the backend is developed using Node.js for handling asynchronous operations and Java with
+                    Spring Boot for robust enterprise-level applications.</p>
+            </div>
+            <div class="box" onclick="redirectTo('projects/python-projects.html')">
+                <img src="assets/projects/python.png" alt="projects">
+                <h3 class="projects-heading">Python Projects</h3>
+                <p class="projects-para">Python projects with Tkinter, Turtle, and machine learning libraries. Tkinter
+                    builds interactive GUIs, Turtle creates engaging graphics, and libraries like scikit-learn, pandas,
+                    numpy and prophet enable sophisticated machine learning models.
+                    These projects range from educational tools and games to advanced data-driven applications. </p>
+            </div>
+            <div class="box" onclick="redirectTo('projects/datascience-projects.html')">
+                <img src="assets/projects/data science.png" alt="projects">
+                <h3 class="projects-heading">Data Science Projects</h3>
+                <p class="projects-para">These projects utilize various technologies and libraries for data analysis and 
+                    machine learning. They involve natural language processing (NLP), statistical methods and data visualization,
+                    machine learning algorithms etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact">
+        <div class="heading color">
+            <h2>Contact Me</h2>
+            <p>Leave a message I'll try to reply in 24 hours.</p>
+        </div>
+        <div class="contact-content">
+            <div class="app">
+                <h3>Connect With Me</h3>
+                <p>Contact Number: 7709849087</p>
+                <p>Email-ID: shreedharparge22@gmail.com</p>
+                <a href="https://www.linkedin.com/in/shreedhar-parge-34527a194/"><i
+                        class='bx bxl-linkedin-square'></a></i>
+                <a href="https://github.com/Shreedhar-parge"><i class='bx bxl-github'></a></i>
+            </div>
+            <div class="contact-form">
+                <form action="" id="contactForm">
+                    <input type="text" name="user_name" placeholder="Name" required>
+                    <input type="email" name="user_email" placeholder="Your E-mail ID" required>
+                    <textarea name="user_message" id="" cols="30" rows="10" placeholder="Your Message Here..." required></textarea>
+                    <input type="submit" value="Send" class="contact-button">
+                    <p class="contact__message" id="contact-message"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- copyright -->
+    <div class="copyright">
+        <p>&copy; 2024 Shreedhar. All rights reserved.</p>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
